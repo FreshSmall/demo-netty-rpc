@@ -8,7 +8,7 @@
     <artifactId>demo-netty-rpc</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>demo-netty-core</module>
+        <module>demo-netty-demo-01</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -18,7 +18,7 @@
         <version>2.4.3</version>
     </parent>
 
-    <name>demo-netty-rpc Maven Webapp</name>
+    <name>demo-netty-rpc</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
