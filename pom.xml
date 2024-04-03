@@ -12,6 +12,7 @@
         <module>demo-netty-demo-02</module>
         <module>demo-netty-udp</module>
         <module>demo-sip-proxy</module>
+        <module>demo-websocket</module>
     </modules>
     <packaging>pom</packaging>
 
