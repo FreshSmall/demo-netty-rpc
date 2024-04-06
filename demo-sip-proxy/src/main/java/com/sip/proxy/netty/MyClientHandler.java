@@ -30,7 +30,7 @@ public class MyClientHandler extends SimpleChannelInboundHandler<DatagramPacket>
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, DatagramPacket packet) throws Exception {
         String msg = packet.content().toString(Charset.forName("GBK"));
-        System.out.println("receive msg:"+msg);
+        System.out.println("netty receive msg:"+msg);
         msgReceiveService.receive(msg);
     }
 }

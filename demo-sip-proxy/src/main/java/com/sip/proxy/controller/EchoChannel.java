@@ -33,12 +33,13 @@ public class EchoChannel implements WebSocketHandler {
     @Override
     public void handleMessage(WebSocketSession webSocketSession, WebSocketMessage<?> webSocketMessage) throws Exception {
         final String msg = webSocketMessage.getPayload().toString();
+        System.out.println("websocket msg:"+msg);
         sendService.send(msg);
     }
 
     @Override
     public void handleTransportError(WebSocketSession webSocketSession, Throwable throwable) throws Exception {
-
+        throwable.printStackTrace();
         System.out.println("Error");
     }
 
